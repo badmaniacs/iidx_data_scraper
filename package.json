@@ -6,7 +6,9 @@
   "scripts": {
     "bundle": "webpack",
     "watch": "webpack --watch",
-    "start": "npm run bundle && npm run watch"
+    "start": "npm run bundle && npm run watch",
+    "preanalyze": "npm run bundle",
+    "analyze": "webpack-bundle-analyzer ./build/bundle-report.json --default-sizes gzip"
   },
   "author": "Kyungtae Park",
   "license": "MIT",
@@ -24,6 +26,7 @@
     "ts-loader": "^9.4.2",
     "typescript": "^5.0.4",
     "webpack": "^5.81.0",
+    "webpack-bundle-analyzer": "^4.8.0",
     "webpack-cli": "^5.0.2"
   }
 }
