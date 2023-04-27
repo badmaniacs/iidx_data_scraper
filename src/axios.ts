@@ -12,10 +12,17 @@ class IidxApi {
     return this.client.get('/djdata/status.html');
   }
 
-  getScore(level:number,offset:number) {
-    return this.client.get(
-      `/djdata/music/difficulty.html?difficult=${level}&style=0&disp=1&offset=${offset}`
-    );
+  getScore(level: number, mode: 'SP' | 'DP', offset: number) {
+    switch (mode) {
+      case 'SP':
+        return this.client.get(
+          `/djdata/music/difficulty.html?difficult=${level}&style=0&disp=1&offset=${offset}`
+        );
+      case 'DP':
+        return this.client.get(
+          `/djdata/music/difficulty.html?difficult=${level}&style=1&disp=1&offset=${offset}`
+        );
+    }
   }
 }
 
