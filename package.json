@@ -1,0 +1,28 @@
+{
+  "name": "iidx_data_scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "bundle": "webpack",
+    "watch": "webpack --watch",
+    "start": "npm run bundle && npm run watch"
+  },
+  "author": "Kyungtae Park",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@types/cheerio": "^0.22.31",
+    "babel-loader": "^9.1.2",
+    "eslint": "^8.39.0",
+    "prettier": "^2.8.8",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.4",
+    "webpack": "^5.81.0",
+    "webpack-cli": "^5.0.2"
+  }
+}
