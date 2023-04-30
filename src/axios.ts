@@ -12,7 +12,7 @@ class IidxApi {
     return this.client.get('/djdata/status.html');
   }
 
-  getScore(level: number, mode: 'SP' | 'DP', offset: number) {
+  getScore(level: number, mode: mode, offset: number) {
     switch (mode) {
       case 'SP':
         return this.client.get(

@@ -78,7 +78,7 @@ export const parseInfo = async () => {
   return djData;
 };
 
-const scoreParser = async (level: number, mode: 'SP' | 'DP') => {
+const scoreParser = async (level: number, mode: mode) => {
   const scoreData: musicData[] = [];
   let offset = 0;
   while (true) {

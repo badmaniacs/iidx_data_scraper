@@ -5,5 +5,7 @@ interface musicData {
   clear_type?: string;
   rank: string;
   score?: string;
-  play_type : 'SP' | 'DP'
+  play_type : mode
 }
+
+type mode = 'SP' | 'DP'
